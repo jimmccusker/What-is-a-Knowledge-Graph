@@ -2,3 +2,4 @@ introduction.tex
 section_Knowledge_Graphs_in_Practice__.tex
 section_A_Definition_of_Knowledge__.tex
 section_Discussion_subsection_Future_Potential__.tex
+section_Conclusions__.tex
