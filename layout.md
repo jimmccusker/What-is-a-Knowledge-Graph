@@ -1,3 +1,4 @@
 TODO_reactiveate_abstract_tag_begin__.tex
 introduction.tex
 section_A_Definition_of_Knowledge__.tex
+section_Knowledge_Graphs_in_Practice__.tex
