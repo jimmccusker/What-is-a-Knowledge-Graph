@@ -1,12 +1,17 @@
 \section{Knowledge Graphs in Practice}
 Rospocher, \textit{et al.} define knowledge graphs as collections of time-invariant facts about entities, typically derived from structured data sources such as Freebase \cite{Rospocher2016}. They cite a dearth of event representations in current knowledge graphs as a shortcoming - limiting knowledge graphs to encyclopedic items such as birth and death dates - primarily due to the difficulty of obtaining temporal data about entities in a structured manner. Recent surveys such as those by Hogenboom, \textit{et al.} \cite{Hogenboom2016} and Deng, \textit{et al.} \cite{Deng2015} provide overviews of numerous methods for event extraction from a variety of sources including social media, news, academic publications, and even images and video, indicating that there is a great interest in finding ways to interpret and include such temporal data in a more structured format.
 
-Google Knowledge Graph
-Freebase
+
+Freebase is a knowledge graph that is open to public access and curation \cite{Bollacker_2008}, and has become the basis for the Google Knowledge Graph, which has extended it with knowledge gleaned from their regular search engine crawls of the web \cite{singhal2012introducing}.
+
 WordNet (?)
 Gene Ontology
 Never Ending Language Learning (NELL)
 OpenIE
+
+Zhang \cite{zhang2002knowledge} presents a formal theory of knowledge graphs as a specialization of semantic networks where meaning is expressed as structure, statements are unambiguous, and a limited set of relation types are used.
+These requirements also minimize redundancy within the knowledge graph, which simplifies analytical operations (including reasoning and queries).
+
 
 \subsection{Knowledge Graph Methods}
 Corby and Zucker present an abstract knowledge graph querying machine they call KGRAM \cite{Corby_2010}, but do not define knowledge graphs beyond being labeled directed graphs.
@@ -16,5 +21,7 @@ Pujara \emph{et al.} use probabilistic soft logic (PSL) to manage uncertainty in
 They argue that many current knowledge graphs do not always clearly identify entities, relying instead on labels that can be different due to spelling variations.
 Their task of ``knowledge graph identification'' has a goal of identifying a set of true assertions from noisy extractions.
 They do not claim to manage the provenance of the resulting knowledge graph assertions, however.
+Lin \emph{et al.} attempt link prediction for automated knowledge graph construction but only rely on a directed labeled graph model of knowledge graphs \cite{lin2015learning}.
+Hakkani-Tur \emph{et al.} use statistical language understanding to pose structured questions against the Freebase knowledge graph, focusing on improving the extraction of relation detection in the queries \cite{Hakkani_Tur_2013}.
 
 This is the literature review. Start here: \url{https://scholar.google.com/scholar?hl=en&q=knowledge+graph}
