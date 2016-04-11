@@ -1,4 +1,20 @@
 \section{Knowledge Graphs in Practice}
-Rospocher, et al. define knowledge graphs as collections of time-invariant facts about entities, typically derived from structured data sources such as Freebase \cite{Rospocher2016}. They cite a dearth of event representations in current knowledge graphs as a shortcoming - limiting knowledge graphs to encyclopedic items such as birth and death dates - primarily due to the difficulty of obtaining temporal data about entities in a structured manner. Recent surveys such as those by Hogenboom, et al. \cite{Hogenboom2016} and Deng, et al. \cite{Deng2015} provide overviews of numerous methods for event extraction from a variety of sources including social media, news, academic publications, and even images and video, indicating that there is a great interest in finding ways to interpret and include such temporal data in a more structured format.
+Rospocher, \textit{et al.} define knowledge graphs as collections of time-invariant facts about entities, typically derived from structured data sources such as Freebase \cite{Rospocher2016}. They cite a dearth of event representations in current knowledge graphs as a shortcoming - limiting knowledge graphs to encyclopedic items such as birth and death dates - primarily due to the difficulty of obtaining temporal data about entities in a structured manner. Recent surveys such as those by Hogenboom, \textit{et al.} \cite{Hogenboom2016} and Deng, \textit{et al.} \cite{Deng2015} provide overviews of numerous methods for event extraction from a variety of sources including social media, news, academic publications, and even images and video, indicating that there is a great interest in finding ways to interpret and include such temporal data in a more structured format.
+
+Google Knowledge Graph
+Freebase
+WordNet (?)
+Gene Ontology
+Never Ending Language Learning (NELL)
+OpenIE
+
+\subsection{Knowledge Graph Methods}
+Corby and Zucker present an abstract knowledge graph querying machine they call KGRAM \cite{Corby_2010}, but do not define knowledge graphs beyond being labeled directed graphs.
+This seems to be an abstraction of graph query methods and discusses how KGRAM is a generalization and extension of the RDF graph query language SPARQL \cite{harris2013sparql}.
+Wang \emph{et al.} \cite{Wang_knowledgegraph} discuss projecting generalized knowledge graphs into hyperplanes, but also only focuses on the labeled directed graph requirement of knowledge graphs.
+Pujara \emph{et al.} use probabilistic soft logic (PSL) to manage uncertainty in knowledge graphs that have been extracted from uncertain sources \cite{Pujara_2013}. 
+They argue that many current knowledge graphs do not always clearly identify entities, relying instead on labels that can be different due to spelling variations.
+Their task of ``knowledge graph identification'' has a goal of identifying a set of true assertions from noisy extractions.
+They do not claim to manage the provenance of the resulting knowledge graph assertions, however.
 
 This is the literature review. Start here: \url{https://scholar.google.com/scholar?hl=en&q=knowledge+graph}
