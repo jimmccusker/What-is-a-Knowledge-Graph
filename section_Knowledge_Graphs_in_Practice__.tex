@@ -3,12 +3,12 @@ Rospocher, \textit{et al.} define knowledge graphs as collections of time-invari
 Another review by Nickel \emph{et al.} explores machine learning methods for knowledge graphs, but limits their definition to directed labeled graphs, with the ability to optionally pre-define the schema.
 They also review but do not take a position on the use of the closed versus open world assumptions.
 
-Stokman and de Vries \cite{Stokman_1988}, as well as Zhang \cite{zhang2002knowledge}, present a formal theory of knowledge graphs as a specialization of semantic networks where meaning is expressed as structure, statements are unambiguous, and a limited set of relation types are used.
+James \cite{james1992knowledge}, Stokman and de Vries \cite{Stokman_1988}, and Zhang \cite{zhang2002knowledge}, present a formal theory of knowledge graphs as a specialization of semantic networks where meaning is expressed as structure, statements are unambiguous, and a limited set of relation types are used.
 These requirements also minimize redundancy within the knowledge graph, which simplifies analytical operations (including reasoning and queries).
 Popping explores the use of knowledge graphs and their challenges at the time in their use in network text analysis \cite{Popping_2003}. 
 Popping defines knowledge graphs similarly to Zhang, stating that they are a type of semantic network that uses only a few types of relations, but also states that additional knowledge can be added to the graph.
 
-More papers to consider: \cite{Dieng_1992} \cite{Juel_Vang_2013} \cite{10110943220141101}
+More papers to consider: \cite{Dieng_1992} \cite{Juel_Vang_2013}
 
 \subsection{Knowledge Graph Methods}
 Corby and Zucker present an abstract knowledge graph querying machine they call KGRAM \cite{Corby_2010}, but do not define knowledge graphs beyond being labeled directed graphs.
@@ -20,7 +20,10 @@ Their task of ``knowledge graph identification'' has a goal of identifying a set
 They do not claim to manage the provenance of the resulting knowledge graph assertions, however.
 Lin \emph{et al.} attempt link prediction for automated knowledge graph construction but only rely on a directed labeled graph model of knowledge graphs \cite{lin2015learning}.
 Hakkani-Tur \emph{et al.} use statistical language understanding to pose structured questions against the Freebase knowledge graph, focusing on improving the extraction of relation detection in the queries \cite{Hakkani_Tur_2013}.
-
+Benedek \emph{et al.} have presendted a collaborative knowledge graph construction tool called  ``Conceptipedia'', building off of their ``WikiNizer'' project \cire{benedek}.
+This project uses visual mind mapping techniques and concept similarity analysis to suggest cross-knowledge graph mappings between collaborators.
+Weiderman and Kritzinger \cite{} refer to knowledge graphs as a synonym for concept maps, but do not expand further on the topic, nor do they cite any work in knowledge graphs.
+ 
 
 \subsection{Academic Knowledge Graphs}
 The Gene Ontology (GO), can be considered more of a knowledge graph than an ontology \cite{Ashburner_2000}.
@@ -41,4 +44,5 @@ All three knowledge graphs provide dataset-level provenance.
 
 \subsection{Commercial Knowledge Graphs}
 Freebase is a knowledge graph that is open to public access and curation \cite{Bollacker_2008} and has become the basis for the Google Knowledge Graph, which has extended it with knowledge gleaned from their regular search engine crawls of the web \cite{singhal2012introducing}.
+Monteiro and Moura \cite{10110943220141101} present a thoughtful analysis of the role of the Google Knowledge Graph as a realization of the Semantic Web vision \cite{bernerslee2000semantic} as Web 4.0, and show how it merges rule-oriented semantic analysis with statistical predictive approaches.
 Microsoft has also introduced a knowledge graph called ``Satori'' to enhance Bing search results \cite{qian2013understand}.

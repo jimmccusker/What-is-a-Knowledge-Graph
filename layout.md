@@ -1,4 +1,4 @@
-abstract1.tex
+abstract.tex
 introduction.tex
 section_Knowledge_Graphs_in_Practice__.tex
 section_A_Definition_of_Knowledge__.tex
