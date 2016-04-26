@@ -11,26 +11,38 @@ Stokman,  de Vries \cite{Stokman_1988}, and Zhang \cite{zhang2002knowledge} posi
 \item Knowledge graphs use a limited set of relation types.
 \end {itemize}
 
-In order for knowledge graphs statements to be unambiguous, they need to be composed of unambiguous units. All identified entities, including types and relations, must be identified using global identifiers with unambiguous denotation.
+In order for knowledge graphs statements to be unambiguous, they need to be composed of unambiguous units. 
+\begin {itemize}
+\item All identified entities in a knowledge graph, including types and relations, must be identified using global identifiers with unambiguous denotation.
+\end {itemize}
 One example of this kind of identifier is the Uniform Resource Identifier (URI) as used in the Resource Description Framework (RDF) \cite{cyganiak2014rdf}.
-While the use of ``limited set of relation types'' was focused on a specific set of non-decomposable relations above, in the context of an open world knowledge system this should be taken to mean a core set of relations and classes that subsume or can be used to compose any other key relations and classes.   
+While the use of ``limited set of relation types'' addressed a specific set of non-decomposable relations above, in the context of an open world knowledge system this should be taken to mean a core set of relations and classes that subsume or can be used to compose any other key relations and classes.   
 %deborah modified slightly above
 This seems to be the case generally, as the reviewed knowledge graphs all attempt to build from a common vocabulary.
 
-In practice, the knowledge graph papers and their related knowledge graphs reviewed seem to all aggregate knowledge from many secondary sources and either use Natural Language Processing (NLP) extraction techniques when the sources are unstructured text, or use a semantic Extraction Transformation, and Load process from structured databases \cite{McCusker_2009}.
+In practice, the knowledge graph literature and the practical knowledge graphs we reviewed either aggregate knowledge from many secondary sources and use Natural Language Processing (NLP) extraction when the sources are unstructured text, or use a semantic Extraction Transformation, and Load (ETL) process from structured databases \cite{McCusker_2009}.
 Some knowledge graphs rely on crowdsourcing of their information (including the Google Knowledge Graph), a form of distributed curation.
 At no point do we see a case where the knowledge does not have a theoretical, citeable source or some other recorded justification.
 Since knowledge graphs nominally represent knowledge, we argue that some criteria for inclusion of content and its provenance should be encoded in the graph.
 This is especially true for knowledge graphs gathered from other sources, as the sources themselves must have some justification for publishing their assertions.
-In many cases, the justification is an appeal to authority, through the citation of the resource the knowledge was extracted from.
+\begin {itemize}
+\item Knowledge graphs must include explicit provenance.
+\end {itemize}
+In many cases, the justification for inclusion of assertions appeals to authority, through the citation of the resource the knowledge was extracted from.
 Authority, at least in scientific research, is only a short cut for validating knowledge, and good knowledge graphs should encode as much justification for their assertions as they can.
-We can consider graphs that do not publish provenance about attribution or justification information to be ``bare statement'' graphs.
-These ``bare statement'' graphs should not considered to be knowledge graphs in the true sense, since there is no way to confirm that the assertions made are justified or even believed by the original asserter, which can be taken as a minimal (but not sufficient \cite{Gettier_1963}) criteria for ``knowledge'' in a knowledge graph.
+We consider graphs without provenance concerning attribution or justification to be ``bare statement'' graphs and not true knowledge graphs, since they provide no way to confirm that a given assertion can be justified or is even believed by the original asserter, which is a minimal (but not sufficient \cite{Gettier_1963}) criteria for ``knowledge'' in a knowledge graph.
+
+\begin {itemize}
+\item Knowledge graphs may include uncertainty assessments.
+\end {itemize}
 
 Some knowledge graphs go further in modeling knowledge by providing uncertainty assessments of the knowledge asserted \cite{Dong_2014}.
 This can be useful when dealing with scientific knowledge graphs, where competing hypotheses and theories are known to be true to certain degrees, which may change as new evidence comes to light.
+\begin {itemize}
+\item Knowledge graphs embody knowledge that remains true.
+\end {itemize}
 
-One more requirement stems from the idea that knowledge should be ``timeless''.
+This final requirement is rooted in the notion that knowledge should be ``timeless''.
 Rospocher, \textit{et al.} define knowledge graphs as collections of time-invariant facts about entities cite{Rospocher2016}.
 More generally, a knowledge graph should focus on knowledge that remains true.
 How best to represent this is up to the knowledge graph.
