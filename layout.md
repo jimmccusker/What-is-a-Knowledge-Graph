@@ -2,5 +2,5 @@ abstract.tex
 introduction.tex
 section_Knowledge_Graphs_in_Practice__.tex
 section_A_Definition_of_Knowledge__.tex
-section_Future_Potential_Currently_knowledge__.tex
+section_Future_Potential_In_the__.tex
 section_Conclusions_Knowledge_graphs_are__.tex
